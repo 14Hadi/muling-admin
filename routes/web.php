@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\ModelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard', [
+        'page' => 'Dashboard'
+    ]);
+})->name('dashboard');
+
+Route::get('/model', [ModelController::class, 'index'])->name('model');
+Route::post('/model', [ModelController::class, 'store'])->name('post_model');
+
+Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback');
