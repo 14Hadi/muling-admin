@@ -16,7 +16,6 @@
           <thead>
             <tr>
               <th scope="col">No.</th>
-              <th scope="col">Nama</th>
               <th scope="col">Email</th>
               <th scope="col">Saran</th>
               <th scope="col">Aksi</th>
@@ -25,7 +24,6 @@
           <tbody>
             <tr>
               <td scope="row">1.</td>
-              <td>Akbar</td>
               <td>akbar@gmail.com</td>
               <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, non!</td>
               <td>
